@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap');
+@import url('"https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&family=Zen+Maru+Gothic:wght@300&display=swap"');
 
 body{
     margin: 0;
@@ -25,36 +28,37 @@ body{
 }
 
 
-.Movies-inner {
-    grid-template-columns: 1fr, 2fr;
-    grid-gap: 1,5 rem;
-    grid-row-gap: 1,5 rem;
-    display: grid;
-}
 
 .Movies-card{
     text-decoration: None;
     box-shadow: 8px 14px 38px rgba(39, 44, 49, .06) 1px 3px 8px rgba(39, 44, 49, 0.03);
     border-radius: 5px;
     margin: 0 0 20px 0;
-    display: block;
+    display: inline-block;
     animation-duration: 2s;
     animation-name: fade;
     height: 280 ;
 }
+.Movies-card img{
+    width: 320px;
+    padding-top: 10px;
+}
 
-.Movies-card h2 {
-    font-size: 18px;
+.Movies-inner h1{
+    font-family: 'Staatliches', sans-serif;
+}
+.Movies-card h1 {
+    font-size: 40px;
     font-weight: 400;
+    padding-left: 10px;
     text-align: center;
 }
 
-.Movies-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px 5px 0 0;
+.Movies-card h2 {
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
 }
-
 .Movies-card h3 {
     font-size: 18px;
     font-weight: 400;
@@ -62,9 +66,27 @@ body{
     margin: 20px;
 }
 
+.Info{
+    width: 1000px;
+    text-align: justify;
+    display: inline;
+    position: absolute;
+    padding: 10px;
+
+}
+
+.Info h2{
+    font-size: 21px;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.Info h3{
+    font-size: 18px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
 .pelicula{
     width: 280px;
-    height: 320px;
+    height: 360px;
     background-color: #DDDDDD;
     margin-top: 20px;
     display:grid;
@@ -99,8 +121,8 @@ body{
 
 
 .pelicula img{
-    width: 280px;
-    height: 200px;
+    width: 270px;
+    height: 250px;
     border-radius: 5px;
 
 }
@@ -162,4 +184,32 @@ body{
         width: 400px;
         height: 400px;
     }
+}
+
+@media (max-width:1240px){ 
+    .Info{
+        width: 700px;
+    }
+
+@media (max-width: 942px){
+    .Info{
+        width: 400px;
+    }
+
+@media (max-width:420px) {
+    .Info{
+        width: 10px;
+    }
+}
+}
+
+}
+
+
+.Movies-inner{
+    display:block;
+}    
+
+.Movies-card{
+    align-self: center;
 }
