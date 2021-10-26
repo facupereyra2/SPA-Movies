@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap');
+@import url('"https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&family=Zen+Maru+Gothic:wght@300&display=swap"');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #343F56;
+    color: #ffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Header-main {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #125D98;
+}
+
+.Header a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 100px;
+}
+
+
+
+.Movies-card{
+    text-decoration: None;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, .06) 1px 3px 8px rgba(39, 44, 49, 0.03);
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    display: inline-block;
+    animation-duration: 2s;
+    animation-name: fade;
+    height: 280 ;
+}
+.Movies-card img{
+    width: 320px;
+    padding-top: 10px;
+}
+
+.Movies-inner h1{
+    font-family: 'Staatliches', sans-serif;
+}
+.Movies-card h1 {
+    font-size: 40px;
+    font-weight: 400;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.Movies-card h2 {
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+}
+.Movies-card h3 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    margin: 20px;
+}
+
+.Info{
+    width: 1000px;
+    text-align: justify;
+    display: inline;
+    position: absolute;
+    padding: 10px;
+
+}
+
+.Info h2{
+    font-size: 21px;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.Info h3{
+    font-size: 18px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+.pelicula{
+    width: 280px;
+    height: 360px;
+    background-color: #DDDDDD;
+    margin-top: 20px;
+    display:grid;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 2px 2px 5px rgb(26, 26, 26);
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.pelicula a{
+    color: #343F56;
+    text-decoration: none;
+}
+
+.pelicula p,
+.pelicula h2{
+    margin-left: 5px;
+}
+
+.pelicula h2{
+    font-size: 18px;
+}
+
+.pelicula p{
+    margin-top:5px
+}
+
+
+.contenedor-div {
+    display:grid;
+}
+
+
+.pelicula img{
+    width: 270px;
+    height: 250px;
+    border-radius: 5px;
+
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    background-color: #343F56;
+    width: 90%;
+    margin: auto;
+}
+
+@media (max-width: 1240px){
+    .contenedor{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pelicula{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 60px;
+    }
+
+    .pelicula img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width:1120px){
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pelicula{
+        width: 350px;
+        height: 350px;
+        margin-bottom: 50px;
+    }
+
+    .pelicula img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width:730px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+
+    .pelicula{
+        width: 400px;
+        height: 400px;
+        margin-bottom: 50px;
+    }
+
+    .pelicula img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width:1240px){ 
+    .Info{
+        width: 700px;
+    }
+
+@media (max-width: 942px){
+    .Info{
+        width: 400px;
+    }
+
+@media (max-width:420px) {
+    .Info{
+        width: 10px;
+    }
+}
+}
+
+}
+
+
+.Movies-inner{
+    display:block;
+}    
+
+.Movies-card{
+    align-self: center;
+}
